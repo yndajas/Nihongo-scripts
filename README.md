@@ -14,7 +14,7 @@ Scripts to extend Japanese language learning sites like WaniKani and Bunpro
 
 Automatically hides the tense tip on review and cram pages - press spacebar to toggle.
 
-Built on top of [Kumirei](https://github.com/Kumirei)'s [Helpful Events](https://github.com/Kumirei/Userscripts/tree/main/Bunpro/Helpful%20Events) and [Wait For Selector](https://github.com/Kumirei/Userscripts/tree/main/Other%20Websites/None/Wait%20For%20Selector).
+Built on top of [Kumirei](https://github.com/Kumirei)'s [Helpful Events](https://github.com/Kumirei/Userscripts/tree/main/Bunpro/Helpful%20Events) and [Wait For Selector](https://github.com/Kumirei/Userscripts/tree/main/Other%20Websites/None/Wait%20For%20Selector). Draft toggle logic contributed by [memosiki](https://github.com/memosiki).
 
 ### WaniKani
 
