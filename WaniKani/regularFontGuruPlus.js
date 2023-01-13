@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WaniKani Regular Font Guru+
 // @namespace    https://www.wanikani.com
-// @version      1.0.0
+// @version      1.0.1
 // @description  When reviewing items at guru level or higher, the font size is reduced to that of WaniKani's body text (14px)
 // @author       yndajas (they)
 // @license      MIT
@@ -40,16 +40,17 @@
 
   const itemElement = document.getElementById('character')
   const guruPlusClass = 'guru-plus'
+  const guruSrsLevel = 5
 
   $.jStorage.listenKeyChange('currentItem', () => {
     const srsLevel = $.jStorage.get('currentItem').srs
     const classActive = itemElement.classList.contains(guruPlusClass)
 
-    if (srsLevel >= 6 && !classActive) {
+    if (srsLevel >= guruSrsLevel && !classActive) {
       itemElement.classList.add(guruPlusClass)
     }
 
-    if (srsLevel <= 5 && classActive) {
+    if (srsLevel < guruSrsLevel && classActive) {
       itemElement.classList.remove(guruPlusClass)
     }
   })
