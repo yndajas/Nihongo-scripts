@@ -1,0 +1,11 @@
+@-moz-document url("https://www.wanikani.com/lesson/session"), url("https://www.wanikani.com/review/session") {
+  #supplement-info {
+    --margin: 20px;
+    --padding: 7em;
+    --max-width: 50rem;
+
+    width: calc(100% - var(--margin) - var(--padding));
+    max-width: var(--max-width);
+    align-self: center;
+  }
+}
