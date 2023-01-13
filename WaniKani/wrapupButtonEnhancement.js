@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         Wanikani Wrap-up Button Enhancement (Tofurky fork)
 // @namespace    https://www.wanikani.com
-// @version      1.0.1
+// @version      1.0.3
 // @description  Allows custom wrap-up queue length (this fork: working backspace; enter/return to start wrap-up)
 // @author       yndajas (built on Inserio, Mempo)
+// @license      MIT
 // @match        https://www.wanikani.com/review/session
 // @match        http://www.wanikani.com/review/session
 // @grant        none
@@ -45,7 +46,7 @@
 
   addStyle(css);
 
-  // get wrap up butto and add class; add wrap up length li and get placed input
+  // get wrap up button and add class; add wrap up length li and get placed input
 
   const wrapUpButton = document.getElementById("option-wrap-up");
   wrapUpButton.classList.add("WKWBE");
