@@ -1,11 +1,45 @@
-@-moz-document url("https://www.wanikani.com/lesson/session"), url("https://www.wanikani.com/review/session") {
+@-moz-document url("https://www.wanikani.com/lesson/session") {
   #supplement-info {
     --margin: 20px;
     --padding: 7em;
-    --max-width: 50rem;
+    --left-column: 15.625rem;
+    --gap: 20px;
+    --max-width: 37.5rem;
 
-    width: calc(100% - var(--margin) - var(--padding));
-    max-width: var(--max-width);
+    width: calc(var(--left-column) + var(--gap) + var(--max-width));
+    max-width: calc(100% - var(--margin) - var(--padding));
     align-self: center;
+  }
+
+  div.pure-u-1-4.col1 {
+    width: var(--left-column);
+  }
+
+  div.pure-u-3-4.col2 {
+    width: calc(100% - var(--left-column) - var(--gap));
+    max-width: var(--max-width);
+  }
+}
+
+@-moz-document url("https://www.wanikani.com/review/session") {
+  #information {
+    --margin: 20px;
+    --padding: 40px;
+    --left-column: 15.625rem;
+    --gap: 20px;
+    --max-width: 37.5rem;
+
+    width: calc(var(--left-column) + var(--gap) + var(--max-width));
+    max-width: calc(100% - var(--margin) - var(--padding));
+    margin: calc(var(--margin) / 2) auto !important;
+  }
+
+  #item-info-col1 {
+    width: var(--left-column);
+  }
+
+  #item-info-col2 {
+    width: calc(100% - var(--left-column) - var(--gap));
+    max-width: var(--max-width);
   }
 }
