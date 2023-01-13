@@ -18,6 +18,18 @@ Built on top of [Kumirei](https://github.com/Kumirei)'s [Helpful Events](https:/
 
 ### WaniKani
 
+#### Regular Font Guru+
+
+[Greasy Fork release page](https://greasyfork.org/en/scripts/458180-wanikani-regular-font-guru)
+
+When reviewing items at guru level or higher, the font size is reduced to that of WaniKani's body text (14px)
+
+The purpose of this script is to give you more practice reading Japanese in a font size you're more likely to find in the wild. We typically don't read much text at the huge font size of items in WaniKani's reviews, so this brings it down to the standard size of WaniKani's body text (14px or 0.875rem).
+
+You can change the size by editing either `waniKaniBodyFontSizeRem` with a size in rem or `font-size: ${waniKaniBodyFontSizeRem}rem;` - just change the `${waniKaniBodyFontSizeRem}rem` part to whatever size and unit you prefer.
+
+More information on why can be found on the release page, as well as the [WaniKani forum post](https://community.wanikani.com/t/userscript-regular-font-guru/60128), which also contains before and after screenshots.
+
 #### Wrap-up Button Enhancement (Tofurky fork)
 
 [Greasy Fork release page](https://greasyfork.org/en/scripts/435324-wanikani-wrap-up-button-enhancement-tofurky-fork)
