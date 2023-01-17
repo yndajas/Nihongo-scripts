@@ -1,45 +1,81 @@
-@-moz-document url("https://www.wanikani.com/lesson/session") {
-  #supplement-info {
-    --margin: 20px;
-    --padding: 7em;
-    --left-column: 15.625rem;
-    --gap: 20px;
+@-moz-document url("https://www.wanikani.com/lesson/session"), url("https://www.wanikani.com/review/session") {
+  #lessons, #reviews {
+    --panel-padding-x: 20px;
+    --panel-margin: 10px;
+    --left-column-width: 15rem;
     --max-width: 37.5rem;
+  }
 
-    width: calc(var(--left-column) + var(--gap) + var(--max-width));
-    max-width: calc(100% - var(--margin) - var(--padding));
+  /* explanations: easier reading width */
+  #lessons #supplement-rad,
+  #lessons #supplement-kan .col2,
+  #lessons #supplement-kan .pure-u-1, /* rare: kanji explanations with no left column */
+  #lessons #supplement-voc .col2,
+  #reviews #item-info-col2 {
+    max-width: var(--max-width)rem;
+  }
+
+  #lessons #information {
+    --lesson-quiz-explanation-padding-left: 8px;
+
+    max-width: calc(var(--max-width)rem + var(--lesson-quiz-explanation-padding-left));
+  }
+
+  @media (min-width: 768px) {
+    #lessons #information {
+      --lesson-quiz-explanation-padding-left: 32px;
+    }
+  }
+
+  /* left column: minimum visible/clean wrap width */
+  #lessons #supplement-info .col1,
+  #lessons #supplement-voc-collocations-container .word-types--with-collocations,
+  #reviews #item-info-col1 {
+    min-width: var(--left-column-width);
+  }
+
+  /* right column: width */
+  @media (min-width: 768px) {
+    #lessons #supplement-kan .col2,
+    #lessons #supplement-voc .col2,
+    #reviews #item-info-col2 {
+      width: calc(100% - var(--left-column-width));
+    }
+  }
+
+
+  /* lessons pre-quiz panel: centre; fit content */
+  #lessons #supplement-info {
     align-self: center;
   }
 
-  div.pure-u-1-4.col1 {
-    width: var(--left-column);
+  /* lessons pre-quiz vocab > reading > left column: allow outer panel to fit content */
+  #lessons #supplement-voc-reading .col1 li {
+    display: list-item;
   }
 
-  div.pure-u-3-4.col2 {
-    width: calc(100% - var(--left-column) - var(--gap));
-    max-width: var(--max-width);
-  }
-}
-
-@-moz-document url("https://www.wanikani.com/review/session") {
-  #information {
-    --margin: 20px;
-    --padding: 40px;
-    --left-column: 15.625rem;
-    --gap: 20px;
-    --max-width: 37.5rem;
-
-    width: calc(var(--left-column) + var(--gap) + var(--max-width));
-    max-width: calc(100% - var(--margin) - var(--padding));
-    margin: calc(var(--margin) / 2) auto !important;
+  /* lessons quiz panel: spacing and width */
+  #lessons #information {
+    margin: var(--panel-margin) auto;
+    width: calc(100% - (var(--panel-padding-x) * 2) - (var(--panel-margin) * 2));
   }
 
-  #item-info-col1 {
-    width: var(--left-column);
+  /* reviews panel: spacing and width */
+  #reviews #information {
+    --column-gap: 20px;
+
+    margin: calc(var(--panel-margin) / 2) auto;
+    width: calc(var(--left-column-width) + var(--column-gap) + var(--max-width)rem);
+    max-width: calc(100% - (var(--panel-margin) * 2) - (var(--panel-padding-x) * 2));
   }
 
-  #item-info-col2 {
-    width: calc(100% - var(--left-column) - var(--gap));
-    max-width: var(--max-width);
+  /* reviews left column: give responsibility for column gap */
+  #reviews #item-info-col1 {
+    margin-right: var(--column-gap);
+  }
+
+  /* reviews right column: remove responsibility for column gap */
+  #reviews #item-info-col2 {
+    padding: 0;
   }
 }
