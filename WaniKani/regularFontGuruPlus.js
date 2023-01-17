@@ -17,13 +17,19 @@
   const originalFontSizeEm = 6.125
   const waniKaniBodyFontSizeRem = 0.875
   const originalHeightEm = 3.21
-  const originalHeighRem = originalFontSizeEm * originalHeightEm
+  const originalHeightRem = originalFontSizeEm * originalHeightEm
 
   const css =
     'div#question div#character.guru-plus {' +
     `  font-size: ${waniKaniBodyFontSizeRem}rem;` +
-    `  line-height: ${originalHeighRem}rem;` +
-    `  height: ${originalHeighRem}rem;` +
+    `  line-height: ${originalHeightRem}rem;` +
+    `  height: ${originalHeightRem}rem;` +
+    '  text-shadow: 0.045rem 0.045rem #0093dd;' +
+    '}' +
+    '' +
+    'div#question div#character.guru-plus img {' +
+    `  width: ${waniKaniBodyFontSizeRem}rem;` +
+    `  height: ${waniKaniBodyFontSizeRem}rem;` +
     '}'
 
   const head = document.getElementsByTagName('head')[0]
