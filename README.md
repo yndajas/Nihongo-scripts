@@ -54,7 +54,7 @@ If your preference is for on-screen up/down buttons over backspace and enter/ret
 
 This is actually a stylesheet, but I didn't want to make an entirely new repo just for one stylesheet.
 
-This limits the width of the meaning/reading explanations on lessons and reviews to 600px (or more precisely 37.5rem), making them a little easier to read.
+This limits the width of the meaning/reading explanations and context sentences on lessons and reviews to 600px (or more precisely 37.5rem), making them a little easier to read.
 
 More information on why can be found on the release page, as well as the [WaniKani forum post](https://community.wanikani.com/t/userstyleuserscript-lessonreview-info-panel-width/60116), which also contains before and after screenshots.
 

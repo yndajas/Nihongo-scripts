@@ -11,6 +11,7 @@
   #lessons #supplement-kan .col2,
   #lessons #supplement-kan .pure-u-1, /* rare: kanji explanations with no left column */
   #lessons #supplement-voc .col2,
+  #lessons #supplement-voc #supplement-voc-context-sentences-slide,
   #reviews #item-info-col2 {
     max-width: var(--max-width)rem;
   }
