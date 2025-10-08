@@ -48,15 +48,15 @@ If your preference is for on-screen up/down buttons over backspace and enter/ret
 
 <sup>*</sup> the workaround to get a working backspace involves changing the input type from number to text, which removes these buttons
 
-#### Lesson/review Explanation Width
+#### Lesson/review explanation width
 
-[Stylish release page](https://userstyles.org/styles/257533/wanikani-lesson-review-explanation-width)
+[UserStyles.world release page](https://userstyles.world/style/24537/wanikani-lessonreview-explanation-width)
 
 This is actually a stylesheet, but I didn't want to make an entirely new repo just for one stylesheet.
 
-This limits the width of the meaning/reading explanations and context sentences on lessons and reviews to 600px (or more precisely 37.5rem), making them a little easier to read.
+Limit the width of meaning/reading explanations on lessons and reviews to 800px (or more precisely 40rem), making them a little easier to read.
 
-More information on why can be found on the release page, as well as the [WaniKani forum post](https://community.wanikani.com/t/userstyleuserscript-lessonreview-info-panel-width/60116), which also contains before and after screenshots.
+More information on why can be found on the [WaniKani forum post](https://community.wanikani.com/t/userstyleuserscript-lessonreview-info-panel-width/60116), which also contains before and after screenshots.
 
 ## Installation
 
@@ -66,7 +66,7 @@ More information on why can be found on the release page, as well as the [WaniKa
 
 If the expected behaviour is not immediately in effect, try a hard refresh (on Windows: Ctrl + Shift + R or Ctrl + F5).
 
-**Note:** the Lesson/review Info Panel Width stylesheet is an exception to these instructions should be installed from the release page
+**Note:** the lesson/review explanation width stylesheet is an exception to these instructions should be installed from the release page
 
 ## Contributing
 
